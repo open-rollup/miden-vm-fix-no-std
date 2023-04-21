@@ -17,8 +17,8 @@ doctest = false
 
 [features]
 default = ["std"]
-std = ["vm-core/std"]
+std = ["vm-core/std", "num_enum/std"]
 
 [dependencies]
-num_enum = "0.5.10"
+num_enum = { version = "0.5.10", default-features = false }
 vm-core = { package = "miden-core", path = "../core", version = "0.5", default-features = false }
